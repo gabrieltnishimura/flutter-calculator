@@ -7,7 +7,7 @@ import 'buttons/calculator-default-row.dart';
 class CalculatorBody extends StatelessWidget {
   final Function onPressed;
 
-  CalculatorBody({this.onPressed});
+  CalculatorBody(this.onPressed);
 
   @override
   Widget build(BuildContext context) {

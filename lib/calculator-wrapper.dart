@@ -3,21 +3,39 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import 'display/calculator-display.dart';
+import 'services/calculator.service.dart';
 
-class CalculatorWrapper extends StatelessWidget {
+class CalculatorWrapper extends StatefulWidget {
+  @override
+  _CalculatorWrapperState createState() => _CalculatorWrapperState();
+}
+
+class _CalculatorWrapperState extends State<CalculatorWrapper> {
+  String currentNumber;
+
+  @override
+  void initState() {
+    this.currentNumber = '0';
+    super.initState();
+  }
+
+  void pressButton(String value) {
+    if (value != null) {
+      setState(() {
+        currentNumber =
+            CalculatorService.appendCharacter(this.currentNumber, value);
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    final sizeX = MediaQuery.of(context).size.width;
-    final sizeY = MediaQuery.of(context).size.height;
-
     return Container(
-        width: sizeX,
-        height: sizeY,
         child: Column(
-          children: [
-            CalculatorDisplay(),
-            CalculatorBody(),
-          ],
-        ));
+      children: [
+        CalculatorDisplay(this.currentNumber),
+        CalculatorBody(this.pressButton),
+      ],
+    ));
   }
 }

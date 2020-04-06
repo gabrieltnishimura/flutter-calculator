@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CalculatorDisplay extends StatelessWidget {
+  final String currentNumber;
+  CalculatorDisplay(this.currentNumber);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,7 +12,7 @@ class CalculatorDisplay extends StatelessWidget {
         child: Align(
           alignment: Alignment.centerRight,
           child: Text(
-            '0',
+            this.currentNumber,
             style: TextStyle(
                 fontSize: 100,
                 color: Colors.white,
