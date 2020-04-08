@@ -1,4 +1,4 @@
-import 'package:animation_test/buttons/calculator-side-row.dart';
+import 'package:animation_test/calculator/buttons/calculator-side-row.dart';
 import 'package:flutter/material.dart';
 
 import 'buttons/calculator-bottom-row.dart';
