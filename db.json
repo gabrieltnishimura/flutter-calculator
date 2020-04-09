@@ -1,19 +1,52 @@
 {
-  "posts": [
+  "icons": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Mail"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "Calendar"
+    },
+    {
+      "id": 3,
+      "title": "People"
+    },
+    {
+      "id": 4,
+      "title": "Newsfeed"
+    },
+    {
+      "id": 5,
+      "title": "OneDrive"
+    },
+    {
+      "id": 6,
+      "title": "SharePoint"
+    },
+    {
+      "id": 7,
+      "title": "Tasks"
+    },
+    {
+      "id": 8,
+      "title": "Delve"
+    },
+    {
+      "id": 9,
+      "title": "OneDrive"
+    },
+    {
+      "id": 10,
+      "title": "SharePoint"
+    },
+    {
+      "id": 11,
+      "title": "Tasks"
+    },
+    {
+      "id": 12,
+      "title": "Delve"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
